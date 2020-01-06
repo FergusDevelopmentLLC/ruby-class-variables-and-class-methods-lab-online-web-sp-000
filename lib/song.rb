@@ -9,15 +9,12 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-
     unless @@artists.include?(artist)
       @@artists << artist
     end
-
     unless @@genres.include?(genre)
       @@genres << genre
     end
-
   end
 
   def self.count
@@ -27,7 +24,6 @@ class Song
   def self.artists
     @@artists
   end
-
 end
 
 Song.new("Lucifer", "Jay-Z", "rap" )
