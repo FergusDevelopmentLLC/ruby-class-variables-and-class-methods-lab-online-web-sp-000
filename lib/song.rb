@@ -11,8 +11,8 @@ class Song
     @@count += 1
 
     if @@artists.include? artist == false
+      p "here"
       @@artists << artist
-      p @@artists
     end
 
   end
