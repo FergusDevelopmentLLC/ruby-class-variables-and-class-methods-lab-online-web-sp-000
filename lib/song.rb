@@ -28,7 +28,7 @@ class Song
   def self.genres
     @@genres
   end
-  
+
 end
 
 Song.new("Lucifer", "Jay-Z", "rap" )
