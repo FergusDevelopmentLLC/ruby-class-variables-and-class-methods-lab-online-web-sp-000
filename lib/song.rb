@@ -32,3 +32,4 @@ Song.new("hit me baby one more time", "Brittany Spears", "pop")
 
 p Song.count
 p Song.artists
+p Song.genres
