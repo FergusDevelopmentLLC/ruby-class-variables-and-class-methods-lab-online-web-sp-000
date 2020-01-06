@@ -3,7 +3,7 @@ class Song
   @@count = 0
   @@artists = []
   @@genres = []
-
+  
   def initialize(name, artist, genre)
     @name = name
     @artist = artist
@@ -13,15 +13,22 @@ class Song
     if @@artists.include? artist == false
       @@artists << artist
     end
-
+    
   end
 
   def self.count
     @@count
   end
 
+  def self.artists
+    @@artists
+  end
+
 end
 
-s = Song.new("hit me baby one more time", "Brittany Spears", "pop")
-ss = Song.new("hit me baby one more time", "Brittany Spears", "pop")
+Song.new("Lucifer", "Jay-Z", "rap" )
+Song.new("99 Problems", "Jay-Z", "rap")
+Song.new("hit me baby one more time", "Brittany Spears", "pop")
+
 p Song.count
+p Song.artists
