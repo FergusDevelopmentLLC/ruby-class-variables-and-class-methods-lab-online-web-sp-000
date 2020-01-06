@@ -24,6 +24,11 @@ class Song
   def self.artists
     @@artists
   end
+
+  def self.genres
+    @@genres
+  end
+  
 end
 
 Song.new("Lucifer", "Jay-Z", "rap" )
