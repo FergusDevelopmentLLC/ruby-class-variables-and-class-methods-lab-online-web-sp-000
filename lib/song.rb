@@ -6,11 +6,13 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
-    if @count == 0
+
+    if @count == nil
       @count = 1
     else
       @count += 1
     end
+
   end
 end
 
