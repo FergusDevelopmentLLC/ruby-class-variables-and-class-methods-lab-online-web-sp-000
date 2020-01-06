@@ -17,4 +17,4 @@ end
 
 s = Song.new("hit me baby one more time", "Brittany Spears", "pop")
 ss = Song.new("hit me baby one more time", "Brittany Spears", "pop")
-p s.count
+p Song.count
