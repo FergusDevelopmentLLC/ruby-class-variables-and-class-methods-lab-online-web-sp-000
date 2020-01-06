@@ -1,19 +1,18 @@
 class Song
   attr_accessor :name, :artist, :genre
-  attr_reader :count
+  @@count = 0
 
   def initialize(name, artist, genre)
     @name = name
     @artist = artist
     @genre = genre
-
-    if @count == nil
-      @count = 1
-    else
-      @count += 1
-    end
-
+    @@count += 1
   end
+
+  def self.count
+    @@count
+  end
+
 end
 
 s = Song.new("hit me baby one more time", "Brittany Spears", "pop")
