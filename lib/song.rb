@@ -8,3 +8,5 @@ class Song
   end
 
 end
+
+s = Song.new("hit me baby one more time", "Brittany Spears", "pop")
